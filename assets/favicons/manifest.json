@@ -1,5 +1,11 @@
 {
- "name": "App",
+ "name": "Berk Mehmet Gürlek",
+ "short_name": "Berk Gürlek",
+ "description": "Data Consultant at Mastercard | AI & Machine Learning",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#a789d4",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
