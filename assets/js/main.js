@@ -33,31 +33,33 @@ modalClose.forEach((mc) => {
 });
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
+const workContainer = document.querySelector(".work__container");
+if (workContainer) {
+  let mixer = mixitup(".work__container", {
+    selectors: {
+      target: ".work__card",
+    },
+    animation: {
+      duration: 300,
+    },
+  });
 
-let mixer = mixitup(".work__container", {
-  selectors: {
-    target: ".work__card",
-  },
-  animation: {
-    duration: 300,
-  },
-});
+  /* Link active work */
+  const workLinks = document.querySelectorAll(".work__item");
 
-/* Link active work */
-const workLinks = document.querySelectorAll(".work__item");
+  function activeWork(workLink) {
+    workLinks.forEach((wl) => {
+      wl.classList.remove("active-work");
+    });
+    workLink.classList.add("active-work");
+  }
 
-function activeWork(workLink) {
   workLinks.forEach((wl) => {
-    wl.classList.remove("active-work");
+    wl.addEventListener("click", () => {
+      activeWork(wl);
+    });
   });
-  workLink.classList.add("active-work");
 }
-
-workLinks.forEach((wl) => {
-  wl.addEventListener("click", () => {
-    activeWork(wl);
-  });
-});
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 

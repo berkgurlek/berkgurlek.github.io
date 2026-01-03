@@ -7,28 +7,29 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  /*   
+  /*
         Purple: hsl(250, 66%, 75%)
         Blue: hsl(207, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
+        Mocha Mousse: hsl(25, 30%, 48%) - Pantone 2025
   */
-  --first-hue: 204;
-  --sat: 100%;
-  --lig: 50%;
-  --second-hue: 219;
+  --first-hue: 25;
+  --sat: 35%;
+  --lig: 55%;
+  --second-hue: 20;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 65%); /* lighter alt */
 
   /*========== Gradient Colors ==========*/
-  --gradient-start: #0099ff;
-  --gradient-end: #a789d4;
+  --gradient-start: #a47764;
+  --gradient-end: #c4a484;
   --gradient-primary: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --text-color: hsl(var(--second-hue), 10%, 70%);
+  --text-color-light: hsl(var(--second-hue), 6%, 55%);
+  --body-color: hsl(30, 8%, 15%);
+  --container-color: hsl(30, 10%, 20%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -179,7 +180,7 @@ body.light-theme {
 
 .light-theme .button--ghost {
   background-image: linear-gradient(var(--body-color), var(--body-color)), var(--gradient-primary);
-  color: #0099ff;
+  color: #a47764;
 }
 
 .light-theme .button--ghost:hover {
@@ -364,8 +365,8 @@ body.light-theme {
   height: 293px;
   background: linear-gradient(
     180deg,
-    rgba(0, 153, 255, 0.5),
-    rgba(167, 137, 212, 0.3)
+    rgba(164, 119, 100, 0.5),
+    rgba(196, 164, 132, 0.3)
   );
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
