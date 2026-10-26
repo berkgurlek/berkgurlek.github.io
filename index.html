@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="assets/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#a47764">
+    <meta name="theme-color" content="#a4573a">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -46,7 +46,14 @@
     <title> Berk Mehmet Gürlek </title>
 </head>
 
-<body>
+<body class="light-theme">
+    <!--=============== BACKGROUND BLOBS ===============-->
+    <div class="bg-blobs" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -87,7 +94,7 @@
             <div class="home__container container grid">
                 <div class="home__data">
                     <span class="home__greeting">Hello, I'm</span>
-                    <h1 class="home__name">Berk Mehmet Gürlek</h1>
+                    <h1 class="home__name">Berk Mehmet <span class="home__name-accent">Gürlek</span></h1>
                     <h3 class="home__education">Consultant</h3>
 
                     <div class="home__button">
@@ -182,7 +189,7 @@
                                 <i class='bx bxs-badge-check'></i>
 
                                 <div>
-                                    <h3 class="skills__name">Next Best Product</h3>
+                                    <h3 class="skills__name">AI Strategy and Campaign Management</h3>
                                     <span class="skills__level"></span>
                                 </div>
                             </div>
@@ -191,6 +198,14 @@
 
                                 <div>
                                     <h3 class="skills__name">Collection Optimization</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Micro SME Lending Strategy</h3>
                                     <span class="skills__level"></span>
                                 </div>
                             </div>
